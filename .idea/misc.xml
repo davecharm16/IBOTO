@@ -9,9 +9,11 @@
         <entry key="..\:/Users/davec/AndroidStudioProjects/IBOTO/app/src/main/res/drawable/rounder_corner.xml" value="0.23489583333333333" />
         <entry key="..\:/Users/davec/AndroidStudioProjects/IBOTO/app/src/main/res/drawable/transparent_button.xml" value="0.23489583333333333" />
         <entry key="..\:/Users/davec/AndroidStudioProjects/IBOTO/app/src/main/res/layout/activity_candidate.xml" value="0.19" />
+        <entry key="..\:/Users/davec/AndroidStudioProjects/IBOTO/app/src/main/res/layout/activity_candidate_card_view.xml" value="0.25" />
         <entry key="..\:/Users/davec/AndroidStudioProjects/IBOTO/app/src/main/res/layout/activity_home.xml" value="0.21875" />
         <entry key="..\:/Users/davec/AndroidStudioProjects/IBOTO/app/src/main/res/layout/activity_main.xml" value="0.18518518518518517" />
         <entry key="..\:/Users/davec/AndroidStudioProjects/IBOTO/app/src/main/res/layout/home.xml" value="0.21875" />
+        <entry key="..\:/Users/davec/AndroidStudioProjects/IBOTO/app/src/main/res/layout/list_view_layout.xml" value="0.21875" />
       </map>
     </option>
   </component>
