@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IBOTO</string>
+    <string name="iboto_logo">Iboto Logo</string>
+    <string name="sign_in_anonymously"><u><![CDATA[> Create Account Here]]></u></string>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/iboto_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iboto_no_bg" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/candidate_card"
+        android:layout_width="125dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="150dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/primary_blue"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="goToCandidate"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="112dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/candidateicont"
+            />
+
+        <TextView
+            android:id="@+id/c_text"
+            android:layout_width="125dp"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/gothic_a1"
+            android:gravity="center"
+            android:text="Candidates"
+            android:textColor="@color/bg_white"
+            android:textSize="17dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/survey_card"
+        android:layout_width="125dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="230dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/primary_blue"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/surveypng"
+            android:layout_width="112dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center|top"
+            app:srcCompat="@drawable/surveyicon_light" />
+
+        <TextView
+            android:id="@+id/s_text"
+            android:layout_width="125dp"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/gothic_a1"
+            android:gravity="center"
+            android:text="Surveys"
+            android:textColor="@color/bg_white"
+            android:textSize="17dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/news_card"
+        android:layout_width="125dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="415dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/primary_blue"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/newpng"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center|center_horizontal|top"
+            app:srcCompat="@drawable/newsicon_light"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/n_text"
+            android:layout_width="125dp"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/gothic_a1"
+            android:gravity="center"
+            android:text="News"
+            android:textColor="@color/bg_white"
+            android:textSize="17dp" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/steps_card"
+        android:layout_width="125dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="515dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/primary_blue"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/stepspng"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/steps_light" />
+
+        <TextView
+            android:id="@+id/stp_text"
+            android:layout_width="125dp"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom|center"
+            android:fontFamily="@font/gothic_a1"
+            android:gravity="center"
+            android:text="Voting Steps"
+            android:textColor="@color/bg_white"
+            android:textSize="17dp" />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

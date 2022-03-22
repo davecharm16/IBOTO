@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:onClick="signIn"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/iboto_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iboto_no_bg" />
+
+    <TextView
+        android:id="@+id/signinTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:gravity="center"
+        android:text="Sign In"
+        android:textColor="@color/primary_blue"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/rounder_corner"
+        android:drawableLeft="@drawable/user_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/questrial"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="5dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/primary_blue"
+        android:textColorHint="@color/primary_blue"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="424dp"
+        android:background="@drawable/rounder_corner"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/questrial"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/primary_blue"
+        android:textColorHint="@color/primary_blue"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsignIn"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="496dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/questrial"
+        android:onClick="signIn"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="@color/bg_white"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="584dp"
+        android:fontFamily="@font/gothic_a1_bold"
+        android:gravity="center"
+        android:text="or"
+        android:textColor="@color/primary_blue"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_createAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="640dp"
+        android:background="@drawable/transparent_button"
+        android:fontFamily="@font/gothic_a1"
+        android:gravity="center"
+        android:text="@string/sign_in_anonymously"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_blue"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
