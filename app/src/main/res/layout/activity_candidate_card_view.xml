@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<androidx.cardview.widget.CardView
-    android:id="@+id/card_view"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="130dp"
     app:cardCornerRadius="10dp"
     app:cardElevation="10dp"
     app:cardMaxElevation="15dp"
-    app:contentPadding="5dp"
-    android:layout_margin="10dp"
-    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    app:contentPadding="10dp"
     >
 
 
@@ -34,9 +32,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gothic_a1"
+            android:gravity="center"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            android:gravity="center"/>
+            android:textSize="20dp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnViewCandidate"
