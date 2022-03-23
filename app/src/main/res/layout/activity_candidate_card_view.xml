@@ -8,8 +8,8 @@
     android:layout_width="match_parent"
     android:layout_height="130dp"
     app:cardCornerRadius="10dp"
-    app:cardElevation="10dp"
-    app:cardMaxElevation="15dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="5dp"
     app:contentPadding="10dp"
     app:cardUseCompatPadding="true"
     >
@@ -35,6 +35,7 @@
             android:fontFamily="@font/gothic_a1"
             android:gravity="center"
             android:textColor="@color/black"
+            android:textAllCaps="true"
             android:textSize="18dp" />
 
         <TextView

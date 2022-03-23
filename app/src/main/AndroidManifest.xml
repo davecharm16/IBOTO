@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IBOTO">
         <activity
+            android:name=".News"
+            android:exported="false" />
+        <activity
             android:name=".CandidateInfo"
             android:exported="false" />
         <activity

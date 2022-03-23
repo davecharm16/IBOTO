@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/iboto_logo"
+        android:src="@drawable/iboto_no_bg" />
+
+    <TextView
+        android:id="@+id/newsText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:gravity="center"
+        android:text="News"
+        android:textColor="@color/primary_blue"
+        android:textSize="35dp" />
+
+    <ListView
+        android:id="@+id/listViewNews"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/newsText"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bg_white"
+        android:backgroundTint="@color/bg_white"
+        android:divider="@null"
+        android:dividerHeight="20dp" />
+</RelativeLayout>
