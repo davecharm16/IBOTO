@@ -26,34 +26,33 @@
         android:layout_height="200dp"
         android:layout_marginTop="130dp"
         android:clickable="true"
+        android:onClick="goToPres"
         app:cardBackgroundColor="@color/primary_blue"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
         app:cardPreventCornerOverlap="true"
+        app:contentPadding="10dp"
+        app:contentPaddingBottom="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:contentPadding="10dp"
-        app:contentPaddingBottom="25dp">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_gravity="center|top"
-            app:srcCompat="@drawable/pres_icon"
-            />
-        
+            app:srcCompat="@drawable/pres_icon" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="21dp"
-            android:textColor="@color/bg_white"
             android:layout_gravity="center|bottom"
-            android:text="Presidential"
-            android:textSize="17dp"
-            android:gravity="center"
             android:fontFamily="@font/gothic_a1"
-            />
-            
+            android:gravity="center"
+            android:text="Presidential"
+            android:textColor="@color/bg_white"
+            android:textSize="17dp" />
+
 
     </androidx.cardview.widget.CardView>
 

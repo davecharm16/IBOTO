@@ -1,8 +1,10 @@
 package com.example.iboto;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Candidate extends AppCompatActivity {
 
@@ -10,5 +12,12 @@ public class Candidate extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_candidate);
+
+
+    }
+
+    public void goToPres(View view){
+        Intent intent = new Intent(this, CandidateCardView.class);
+        startActivity(intent);
     }
 }
