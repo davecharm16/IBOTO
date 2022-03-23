@@ -17,15 +17,25 @@ public class CandidateCardView extends AppCompatActivity {
     private ListView listView;
     private ArrayList<Model> models;
     private CustomListAdapter candidateAdapter;
+    private String nav_data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view_layout);
 
-        listView = findViewById(R.id.listView);
+        if(getIntent().hasExtra("nav_data")){
+            Bundle extras = getIntent().getExtras();
+            nav_data = extras.getString("nav_data");
+        }
 
-        models = ListDetails.getPresLists();
+        listView = findViewById(R.id.listView);
+        if(nav_data.equals("president")){
+            models = ListDetails.getPresLists();
+        }
+        else if(nav_data.equals("vp")){
+            models =ListDetails.getVPLists();
+        }
 
         candidateAdapter = new CustomListAdapter(CandidateCardView.this, models);
 

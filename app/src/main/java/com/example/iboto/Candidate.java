@@ -18,10 +18,13 @@ public class Candidate extends AppCompatActivity {
 
     public void goToPres(View view){
         Intent intent = new Intent(this, CandidateCardView.class);
+        intent.putExtra("nav_data", "president");
         startActivity(intent);
     }
 
     public void goToVP(View view){
-
+        Intent intent = new Intent(this, CandidateCardView.class);
+        intent.putExtra("nav_data", "vp");
+        startActivity(intent);
     }
 }

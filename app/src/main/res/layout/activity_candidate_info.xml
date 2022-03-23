@@ -35,7 +35,7 @@
             >
             <ImageView
                 android:id="@+id/infoImage"
-                android:layout_gravity="center"
+                android:layout_gravity="bottom"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:src="@drawable/robredo"
@@ -49,7 +49,8 @@
                 android:fontFamily="@font/gothic_a1_extrabold"
                 android:textColor="@color/primary_blue"
                 android:text="10. Robredo, Leni"
-                android:textSize="28sp"
+                android:textSize="26sp"
+                android:textAllCaps="true"
                 />
 
         </LinearLayout>
