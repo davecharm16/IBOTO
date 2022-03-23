@@ -38,8 +38,9 @@
             android:textSize="18dp" />
 
         <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+            android:id="@+id/viewInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_button"
@@ -47,7 +48,8 @@
             android:gravity="center"
             android:text="view info"
             android:textAllCaps="false"
-            android:textColor="@color/bg_white" />
+            android:textColor="@color/bg_white"
+            android:padding="10dp"/>
 
 
     </LinearLayout>

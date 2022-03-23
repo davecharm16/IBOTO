@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,12 +18,15 @@ public class CandidateCardView extends AppCompatActivity {
     private ListView listView;
     private ArrayList<Model> models;
     private CustomListAdapter candidateAdapter;
+    private TextView candidateTitle, view_info;
     private String nav_data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view_layout);
+
+        candidateTitle = findViewById(R.id.candidateTextTitle);
 
         if(getIntent().hasExtra("nav_data")){
             Bundle extras = getIntent().getExtras();
@@ -32,16 +36,31 @@ public class CandidateCardView extends AppCompatActivity {
         listView = findViewById(R.id.listView);
         if(nav_data.equals("president")){
             models = ListDetails.getPresLists();
+            candidateTitle.setText("Presidentials");
+            setItemsOnclick();
+
         }
         else if(nav_data.equals("vp")){
             models =ListDetails.getVPLists();
+            candidateTitle.setText("Vice Presidentials");
+            setItemsOnclick();
+        }
+        else if(nav_data.equals("senate")){
+            models =ListDetails.getSenatorials();
+            candidateTitle.setText("Senatorials");
+            //test
         }
 
-        candidateAdapter = new CustomListAdapter(CandidateCardView.this, models);
+        candidateAdapter = new CustomListAdapter(CandidateCardView.this, models, nav_data);
 
         listView.setAdapter(candidateAdapter);
 
 //        ArrayList<Cards> list  = new ArrayList<>();
+
+
+    }
+
+    private void setItemsOnclick(){
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -51,8 +70,5 @@ public class CandidateCardView extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
     }
 }

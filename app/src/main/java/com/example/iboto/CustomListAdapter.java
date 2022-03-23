@@ -12,10 +12,12 @@ import java.util.ArrayList;
 public class CustomListAdapter extends BaseAdapter {
     private Context context;
     private ArrayList<Model> models;
+    private String nav;
 
-    public CustomListAdapter(Context context, ArrayList<Model> models) {
+    public CustomListAdapter(Context context, ArrayList<Model> models, String nav) {
         this.context = context;
         this.models = models;
+        this.nav = nav;
     }
 
 
@@ -42,11 +44,18 @@ public class CustomListAdapter extends BaseAdapter {
         }
         ImageView images = (ImageView) view.findViewById(R.id.cardImage);
         TextView title = (TextView)view.findViewById(R.id.cardTitle);
-
+        TextView view_info = (TextView)view.findViewById(R.id.viewInfo);
         Model model = models.get(i);
 
         images.setImageResource(model.getCandidateImage());
         title.setText(model.getName());
+
+        if(nav.equals("senate")){
+            view_info.setText(model.getPartylist());
+        }
+
+
+
 
         return view;
     }

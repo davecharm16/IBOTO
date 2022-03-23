@@ -27,4 +27,9 @@ public class Candidate extends AppCompatActivity {
         intent.putExtra("nav_data", "vp");
         startActivity(intent);
     }
+    public void goToSenate(View view){
+        Intent intent = new Intent(this, CandidateCardView.class);
+        intent.putExtra("nav_data", "senate");
+        startActivity(intent);
+    }
 }

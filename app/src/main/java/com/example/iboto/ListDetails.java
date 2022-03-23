@@ -47,4 +47,57 @@ public class ListDetails {
 
         return candidateLists;
     }
+
+
+    public static  ArrayList<Model> getSenatorials(){
+        ArrayList<Model> candidateLists  = new ArrayList<Model>();
+        candidateLists.add(new Model((R.drawable.sen_icon), "1. AFUANG, ABNER ","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "2. ALBANI, IBRAHIM ","WORKERS AND PEASANTS PARTY ", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "3. APOLINARIO, PASTOR ","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "4. ARCILLA, OSCAR JR. ","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "5. ARRANZA, MANG JESS ","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "6. BAGUILAT, TEDDY (","LIBERAL PARTY", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "7. BAILEN, AGNES ","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "8. BALITA, CARL ","AKSYON DEMOKRATIKO", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "9. BARBO, LUTZ ","PARTIDO DEMOKRATIKO PILIPINO LAKAS NG BAYAN", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "10. BAUTISTA, HERBERT BISTEK ","NATIONALIST PEOPLE'S COALITION", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "11. BELGICA, GRECO ","PEDERALISMO NG DUGONG DAKILANG SAMAHAN", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "12. BELLO, SILVESTRE JR. ","PARTIDO DEMOKRATIKO PILIPINO LAKAS NG BAYAN", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "13. BIAZON, DEVIENDO SR. ","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "14. BINAY, JOJO ","UNITED NATIONALIST ALLIANCE", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "15. CABONEGRO, ROY ","PARTIDO LAKAS NG MASA", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "16. CASTRICIONES, BRO JOHN ","PARTIDO DEMOKRATIKO PILIPINO LAKAS NG BAYAN", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "17. CAYETANO, ALAN PETER ","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "18. CHAVEZ, MELCHOR ","WORKERS AND PEASANTS PARTY", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "19. COLMENARES, NERI ","MAKABAYANG KOALISYON NG MAMAMAYAN", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "20. D'ANGELO, DAVID ","PARTIDO LAKAS NG MASA", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "21. DE LIMA, LEILA ","LIBERAL PARTY", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "22. DEL ROSARIO, MONSOUR ","PARTIDO PARA SA DEMOKRATIKONG REPORMA", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "23. DIAZ, DING ","PARTIDO PILIPINO SA PAGBABAGO", "", "","" ));
+
+
+        //51-70
+        candidateLists.add(new Model((R.drawable.sen_icon), "51. MATULA, JOSE SONNY ","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "52. MINDALANO-ADAM,MARIETA","KATIPUNAN NG KAMALAYANG KAYUMANGGI", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "53. OLARTE, LEO OBIAS","IBIGKIS PINOY MOVEMENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "54. PADILLA, DRA. MINGUITA","PARTIDO PARA SA DEMOKRATIKONG REPORMA", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "55. PADILLA, ROBIN","PARTIDO DEMOKRATIKO PILIPINO LAKAS NG BAYAN", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "56. PANELO, SAL PANALO","PARTIDO DEMOKRATIKO PILIPINO LAKAS NG BAYAN", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "57. PIMENTEL, ASTRA ","PARTIDO DEMOKRATIKO PILIPINO LAKAS NG BAYAN", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "58. PIÑOL, MANNY","NATIONALIST PEOPLE'S COALITION", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "59. RICABLANCA, WILLIE JR."," PARTIDO MAHARLIKA", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "60. ROQUE, HARRY SPOX","PEOPLE'S REFORM PARTY", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "61. SAHIDULLA, LADY ANNE","PEDERALISMO NG DUGONG DAKILANG SAMAHAN", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "62. SISON, JOPET","AKSYON DEMOKRATIKO", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "63. TEODORO, GIBO","PEOPLE'S REFORM PARTY", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "64. TRILLANES, ANTONIO IV","LIBERAL PARTY ", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "65. TULFO, IDOL RAFFY","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "66. VALEROS, REY","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "67. VILLANUEVA, JOEL TESDAMAN","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "68. VILLAR, MARK","INACIONALISTA PARTY", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "69. ZUBIAGA, CARMEN","INDEPENDENT", "", "","" ));
+        candidateLists.add(new Model((R.drawable.sen_icon), "70. ZUBIRI, MIGZ ","INDEPENDENT", "", "","" ));
+
+        return candidateLists;
+    }
 }

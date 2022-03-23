@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Candidate">
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="142dp"
@@ -24,7 +28,7 @@
         android:id="@+id/pres_card"
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="30dp"
         android:clickable="true"
         android:onClick="goToPres"
         app:cardBackgroundColor="@color/primary_blue"
@@ -33,9 +37,8 @@
         app:cardPreventCornerOverlap="true"
         app:contentPadding="10dp"
         app:contentPaddingBottom="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_gravity="center"
+        >
 
         <ImageView
             android:layout_width="120dp"
@@ -57,10 +60,11 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
         android:id="@+id/vp_card"
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:layout_marginTop="355dp"
+        android:layout_marginTop="30dp"
         android:clickable="true"
         android:onClick="goToVP"
         app:cardBackgroundColor="@color/primary_blue"
@@ -92,41 +96,44 @@
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/senate_card"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="580dp"
-        android:clickable="true"
-        app:cardBackgroundColor="@color/primary_blue"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        app:cardPreventCornerOverlap="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:contentPadding="10dp"
-        app:contentPaddingBottom="25dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/senate_card"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:clickable="true"
+            android:onClick="goToSenate"
+            app:cardBackgroundColor="@color/primary_blue"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:contentPadding="10dp"
+            app:contentPaddingBottom="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center|top"
-            app:srcCompat="@drawable/sen_icon"
-            />
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center|top"
+                app:srcCompat="@drawable/sen_icon" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="21dp"
-            android:textColor="@color/bg_white"
-            android:layout_gravity="center|bottom"
-            android:text="Senatorial"
-            android:textSize="17dp"
-            android:gravity="center"
-            android:fontFamily="@font/gothic_a1"
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:layout_gravity="center|bottom"
+                android:fontFamily="@font/gothic_a1"
+                android:gravity="center"
+                android:text="Senatorial"
+                android:textColor="@color/bg_white"
+                android:textSize="17dp" />
 
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</ScrollView>
