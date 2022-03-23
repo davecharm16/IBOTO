@@ -20,4 +20,8 @@ public class Candidate extends AppCompatActivity {
         Intent intent = new Intent(this, CandidateCardView.class);
         startActivity(intent);
     }
+
+    public void goToVP(View view){
+
+    }
 }
