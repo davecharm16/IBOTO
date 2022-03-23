@@ -1,6 +1,8 @@
 package com.example.iboto;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +31,15 @@ public class CandidateCardView extends AppCompatActivity {
         listView.setAdapter(candidateAdapter);
 
 //        ArrayList<Cards> list  = new ArrayList<>();
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Model model = models.get(i);
+
+
+            }
+        });
+
 
 
     }
