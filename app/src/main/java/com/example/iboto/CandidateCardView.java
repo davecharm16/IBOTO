@@ -1,5 +1,6 @@
 package com.example.iboto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,7 +25,7 @@ public class CandidateCardView extends AppCompatActivity {
 
         listView = findViewById(R.id.listView);
 
-        models = ListDetails.getLists();
+        models = ListDetails.getPresLists();
 
         candidateAdapter = new CustomListAdapter(CandidateCardView.this, models);
 
@@ -35,8 +36,9 @@ public class CandidateCardView extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Model model = models.get(i);
-
-
+                Intent intent = new Intent(CandidateCardView.this, CandidateInfo.class);
+                intent.putExtra("candidate", model);
+                startActivity(intent);
             }
         });
 
