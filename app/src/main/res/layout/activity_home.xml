@@ -66,6 +66,7 @@
         android:layout_marginStart="230dp"
         android:layout_marginTop="230dp"
         android:clickable="true"
+        android:onClick="goToSurvey"
         app:cardBackgroundColor="@color/primary_blue"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
@@ -102,6 +103,7 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="415dp"
         android:clickable="true"
+        android:onClick="goToNews"
         app:cardBackgroundColor="@color/primary_blue"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
@@ -115,8 +117,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center|center_horizontal|top"
-            app:srcCompat="@drawable/newsicon_light"
-            android:layout_marginTop="40dp"/>
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/newsicon_light" />
 
         <TextView
             android:id="@+id/n_text"
@@ -128,7 +130,6 @@
             android:text="News"
             android:textColor="@color/bg_white"
             android:textSize="17dp" />
-
 
 
     </androidx.cardview.widget.CardView>
