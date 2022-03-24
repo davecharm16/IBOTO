@@ -11,7 +11,7 @@ import org.eazegraph.lib.models.PieModel;
 
 public class Survey extends AppCompatActivity {
     // Create the object of TextView and PieChart class
-    TextView tvR, tvPython, tvCPP, tvJava;
+    TextView tvBBM, tvLeni, tvIsko, tvManny, tvPing, tvFaisal, tvLeody, tvJose;
     PieChart pieChart;
 
 
@@ -22,10 +22,14 @@ public class Survey extends AppCompatActivity {
 
         // Link those objects with their respective
         // id's that we have given in .XML file
-        tvR = findViewById(R.id.tvR);
-        tvPython = findViewById(R.id.tvPython);
-        tvCPP = findViewById(R.id.tvCPP);
-        tvJava = findViewById(R.id.tvJava);
+        tvBBM = findViewById(R.id.tvR);
+        tvLeni = findViewById(R.id.tvPython);
+        tvIsko = findViewById(R.id.tvCPP);
+        tvManny = findViewById(R.id.tvJava);
+        tvPing = findViewById(R.id.tvPing);
+        tvFaisal = findViewById(R.id.tvFaisal);
+        tvLeody = findViewById(R.id.tvLeody);
+        tvJose = findViewById(R.id.jtvJose);
         pieChart = findViewById(R.id.piechart);
 
         // Set the data and color to the pie chart
@@ -34,31 +38,58 @@ public class Survey extends AppCompatActivity {
 
     }
     private void setData(){
-        tvR.setText(Integer.toString(40));
-        tvPython.setText(Integer.toString(30));
-        tvCPP.setText(Integer.toString(5));
-        tvJava.setText(Integer.toString(25));
+        tvBBM.setText(Integer.toString(60));
+        tvLeni.setText(Integer.toString(15));
+        tvIsko.setText(Integer.toString(10));
+        tvManny.setText(Integer.toString(8));
+        tvPing.setText(Integer.toString(2));
+        tvFaisal.setText(Integer.toString(2));
+        tvLeody.setText(Integer.toString(2));
+        tvJose.setText(Integer.toString(1));
 
         pieChart.addPieSlice(
                 new PieModel(
-                        "R",
-                        Integer.parseInt(tvR.getText().toString()),
-                        Color.parseColor("#FFA726")));
+                        "BongBong",
+                        Integer.parseInt(tvBBM.getText().toString()),
+                        Color.parseColor("#AF0202")));
         pieChart.addPieSlice(
                 new PieModel(
-                        "Python",
-                        Integer.parseInt(tvPython.getText().toString()),
-                        Color.parseColor("#66BB6A")));
+                        "Leni",
+                        Integer.parseInt(tvLeni.getText().toString()),
+                        Color.parseColor("#E91E63")));
         pieChart.addPieSlice(
                 new PieModel(
-                        "C++",
-                        Integer.parseInt(tvCPP.getText().toString()),
-                        Color.parseColor("#EF5350")));
+                        "Isko",
+                        Integer.parseInt(tvIsko.getText().toString()),
+                        Color.parseColor("#2196F3")));
         pieChart.addPieSlice(
                 new PieModel(
-                        "Java",
-                        Integer.parseInt(tvJava.getText().toString()),
-                        Color.parseColor("#29B6F6")));
+                        "Manny",
+                        Integer.parseInt(tvManny.getText().toString()),
+                        Color.parseColor("#3F51B5")));
+
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Ping",
+                        Integer.parseInt(tvPing.getText().toString()),
+                        Color.parseColor("#FF03DAC5")));
+
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Faisal",
+                        Integer.parseInt(tvFaisal.getText().toString()),
+                        Color.parseColor("#FFBB86FC")));
+
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Leody",
+                        Integer.parseInt(tvLeody.getText().toString()),
+                        Color.parseColor("#FF6200EE")));
+        pieChart.addPieSlice(
+                new PieModel(
+                        "Jose",
+                        Integer.parseInt(tvJose.getText().toString()),
+                        Color.parseColor("#fb7268")));
 
         pieChart.startAnimation();
     }
