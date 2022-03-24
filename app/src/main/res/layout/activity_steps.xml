@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Steps"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/iboto_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iboto_no_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/electionDay"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/txt_bg"
+            android:text="45"
+            android:gravity="center"
+            android:fontFamily="@font/gothic_a1_extrabold"
+            android:textSize="35dp"
+            android:textColor="@color/bg_white"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/gothic_a1_extrabold"
+            android:text="DAYS, until May 09, 2022 National Elections"
+            android:textColor="@color/primary_blue"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:gravity="center"
+        android:text="Steps in Voting"
+        android:textColor="@color/primary_blue"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gothic_a1"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="0dp"
+        android:gravity="center"
+        android:text="For the May 9, 2022, Nation and Local Election, Voting Time   6:00 AM - 7:00 PM"
+        android:textColor="@color/primary_blue"
+        android:textSize="24dp" />
+    
+    <com.smarteist.autoimageslider.SliderView
+        android:layout_margin="20dp"
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:sliderAnimationDuration="2000"
+        app:sliderAutoCycleDirection="right"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="2000"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="@color/primary_blue"
+        app:sliderIndicatorUnselectedColor="@color/bg_white"
+        app:sliderStartAutoCycle="true"/>
+
+
+
+
+</LinearLayout>

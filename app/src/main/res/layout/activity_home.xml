@@ -142,6 +142,7 @@
         android:layout_marginStart="230dp"
         android:layout_marginTop="515dp"
         android:clickable="true"
+        android:onClick="goToSteps"
         app:cardBackgroundColor="@color/primary_blue"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
@@ -167,7 +168,6 @@
             android:text="Voting Steps"
             android:textColor="@color/bg_white"
             android:textSize="17dp" />
-
 
 
     </androidx.cardview.widget.CardView>

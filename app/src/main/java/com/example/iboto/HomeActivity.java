@@ -29,4 +29,9 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Survey.class );
         startActivity(intent);
     }
+
+    public void goToSteps(View view){
+        Intent intent = new Intent(this,Steps.class );
+        startActivity(intent);
+    }
 }
