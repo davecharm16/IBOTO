@@ -36,10 +36,14 @@
             android:id="@+id/newsImg"
             android:layout_width="100dp"
             android:layout_height="120dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"/>
 
         <TextView
             android:justificationMode="inter_word"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:id="@+id/newsDescription"
             android:layout_width="wrap_content"
             android:layout_height="150dp"

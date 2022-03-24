@@ -19,7 +19,10 @@
         android:id="@+id/cardImage"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_gravity="start|center" />
+        android:layout_gravity="start|center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        />
 
     <LinearLayout
         android:layout_width="200dp"
