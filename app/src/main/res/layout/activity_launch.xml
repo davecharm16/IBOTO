@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglaunch"
+    >
+    
+    <TextView
+        android:id="@+id/wText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Your guide to the 2022 Philippine National Elecions"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:fontFamily="@font/questrial"
+        android:textColor="@color/primary_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+
+    <ImageView
+        android:id="@+id/wImg"
+        android:layout_width="310dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/wText"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/iboto_no_bg" />
+
+    <TextView
+        android:id="@+id/wMTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="iBoto"
+        android:textColor="@color/primary_blue"
+        android:textSize="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gStart"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/wMTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/questrial"
+        android:onClick="signIn"
+        android:text="> Get Started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+
+</RelativeLayout>

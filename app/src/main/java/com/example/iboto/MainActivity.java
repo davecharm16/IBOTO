@@ -1,22 +1,20 @@
 package com.example.iboto;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    EditText username, password;
-    Button sign_in;
+    Button getStarted;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        sign_in = findViewById(R.id.btnsignIn);
+        setContentView(R.layout.activity_launch);
+        getStarted = findViewById(R.id.gStart);
     }
 
     public void signIn(View view){
