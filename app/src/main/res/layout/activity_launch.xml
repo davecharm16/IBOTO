@@ -4,18 +4,18 @@
     android:layout_height="match_parent"
 
     >
-    
+
     <TextView
         android:id="@+id/wText"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:text="Your guide to the 2022 Philippine National Elecions"
-        android:gravity="center"
-        android:textSize="25dp"
-        android:fontFamily="@font/questrial"
-        android:textColor="@color/primary_blue"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/questrial"
+        android:gravity="center"
+        android:text="Your guide to the 2022 Philippine National Elections"
+        android:textColor="@color/primary_blue"
+        android:textSize="25dp" />
 
 
     <ImageView
