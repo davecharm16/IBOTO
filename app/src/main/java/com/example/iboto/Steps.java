@@ -17,10 +17,15 @@ import java.util.concurrent.TimeUnit;
 public class Steps extends AppCompatActivity {
     SliderView sliderView;
     int[] images = {
-            R.drawable.campaign,
-            R.drawable.campaign2,
-            R.drawable.info,
-            R.drawable.info2,
+            R.drawable.step1,
+            R.drawable.step2,
+            R.drawable.step3,
+            R.drawable.step4,
+            R.drawable.step5,
+            R.drawable.step6,
+            R.drawable.step7,
+            R.drawable.step8,
+
     };
 
     TextView elect_date;

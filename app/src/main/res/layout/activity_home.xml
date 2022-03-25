@@ -43,7 +43,7 @@
             android:layout_width="112dp"
             android:layout_height="140dp"
             android:layout_gravity="center|top"
-            app:srcCompat="@drawable/candidateicont"
+            app:srcCompat="@drawable/cadidate_icon"
             />
 
         <TextView

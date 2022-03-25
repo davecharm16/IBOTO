@@ -73,13 +73,13 @@
         android:text="For the May 9, 2022, Nation and Local Election, Voting Time   6:00 AM - 7:00 PM"
         android:textColor="@color/primary_blue"
         android:textSize="24dp" />
-    
+
     <com.smarteist.autoimageslider.SliderView
-        android:layout_margin="20dp"
-        android:layout_marginTop="20dp"
         android:id="@+id/image_slider"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
         app:sliderAnimationDuration="2000"
         app:sliderAutoCycleDirection="right"
         app:sliderAutoCycleEnabled="true"
@@ -90,8 +90,8 @@
         app:sliderIndicatorPadding="3dp"
         app:sliderIndicatorRadius="2dp"
         app:sliderIndicatorSelectedColor="@color/primary_blue"
-        app:sliderIndicatorUnselectedColor="@color/bg_white"
-        app:sliderStartAutoCycle="true"/>
+        app:sliderIndicatorUnselectedColor="#AEAEAE"
+        app:sliderStartAutoCycle="true" />
 
 
 
