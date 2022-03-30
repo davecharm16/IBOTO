@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Developers"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg_white"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="142dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/iboto_logo"
+            app:srcCompat="@drawable/iboto_no_bg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gothic_a1_extrabold"
+            android:gravity="center"
+            android:text="DEVELOPERS"
+            android:textColor="@color/primary_blue"
+            android:textSize="35dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:clickable="true">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/dev1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/dev1"
+                app:civ_border_color="@color/primary_blue"
+                app:civ_border_width="4dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="10dp"
+                app:civ_shadow_color="#3f51b5"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dave Charm B. Bulaquena"
+                android:textSize="18dp"
+                android:fontFamily="@font/gothic_a1_bold"
+                android:textColor="@color/primary_blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lead Programmer/UI Designer"
+                android:textSize="16dp"
+                android:fontFamily="@font/questrial"
+                android:textColor="@color/primary_blue"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:clickable="true">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/dev2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/dev2"
+                app:civ_border_color="@color/primary_blue"
+                app:civ_border_width="4dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="10dp"
+                app:civ_shadow_color="#3f51b5"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ceejay B. Caballero"
+                android:textSize="18dp"
+                android:fontFamily="@font/gothic_a1_bold"
+                android:textColor="@color/primary_blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graphic Designer"
+                android:textSize="16dp"
+                android:fontFamily="@font/questrial"
+                android:textColor="@color/primary_blue"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:clickable="true">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/dev3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/dev3"
+                app:civ_border_color="@color/primary_blue"
+                app:civ_border_width="4dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="10dp"
+                app:civ_shadow_color="#3f51b5"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duyne Zildjan Estrada"
+                android:textSize="18dp"
+                android:fontFamily="@font/gothic_a1_bold"
+                android:textColor="@color/primary_blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Researcher"
+                android:textSize="16dp"
+                android:fontFamily="@font/questrial"
+                android:textColor="@color/primary_blue"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:clickable="true">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/dev4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/dev4"
+                app:civ_border_color="@color/primary_blue"
+                app:civ_border_width="4dp"
+                app:civ_shadow="false"
+                app:civ_shadow_radius="10dp"
+                app:civ_shadow_color="#3f51b5"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jerad Andrei Fajardo"
+                android:textSize="18dp"
+                android:fontFamily="@font/gothic_a1_bold"
+                android:textColor="@color/primary_blue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Researcher"
+                android:textSize="16dp"
+                android:fontFamily="@font/questrial"
+                android:textColor="@color/primary_blue"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

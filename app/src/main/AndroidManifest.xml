@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IBOTO">
         <activity
+            android:name=".Developers"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
             android:name=".Steps"
             android:exported="false" />
         <activity

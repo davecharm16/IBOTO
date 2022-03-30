@@ -43,4 +43,7 @@ dependencies {
 
     //
     implementation 'com.github.smarteist:autoimageslider:1.4.0'
+
+    //circle image
+    implementation 'com.mikhaellopez:circularimageview:4.3.0'
 }
