@@ -3,4 +3,9 @@
     <string name="iboto_logo">Iboto Logo</string>
     <string name="sign_in_anonymously"><u><![CDATA[> Create Account Here]]></u></string>
     <string name="advocacies_platform"><![CDATA[Advocacies & Platform]]></string>
+    <string name="nav_s">Click the Survey Button on Home Screen, After that you will be Navigated to the Survey Features in which you can see the Survey Data of the Presidential Election</string>
+    <string name="nav1">Step 1 is to click the Candidate Button on Home menu, Step 2 is to Click your preferred political position you want to view, Step 3 is to click the Candidate on the Lists given.\n\n<u>Candidates</u> > <u>Candidate Position</u>  >  <u>Candidate Lists</u>  > <u>Candidate Info</u> </string>
+    <string name="nav_n">Step 1 is to click the News Button on Home menu, Step 2 is to Click your preferred news you want to read based on the list of Election News </string>
+    <string name="nav_v">Step 1 is to click the Voting Steps Button on Home menu, Step 2 is to the Slider to View the Steps on How to Vote on the upcoming Election </string>
+    <string name="about_text">iBoto is an app that will disseminate information about the national election candidates, especially the president’s and vice president’s position. It also includes showing latest news about the elections, steps in voting and a simple data about surveys.</string>
 </resources>

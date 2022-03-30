@@ -18,4 +18,8 @@ public class About extends AppCompatActivity {
         Intent intent = new Intent(this, Developers.class);
         startActivity(intent);
     }
+    public void goToManual(View view){
+        Intent intent = new Intent(this, UserManual.class);
+        startActivity(intent);
+    }
 }

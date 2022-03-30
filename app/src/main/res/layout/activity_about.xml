@@ -9,9 +9,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/bg_white">
+        android:layout_height="900dp"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
@@ -33,6 +33,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="60dp"
             android:clickable="true"
+            android:onClick="goToManual"
             app:cardBackgroundColor="@color/primary_blue"
             app:cardCornerRadius="20dp"
             app:cardElevation="10dp"

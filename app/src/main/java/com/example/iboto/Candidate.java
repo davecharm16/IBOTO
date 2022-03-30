@@ -32,4 +32,5 @@ public class Candidate extends AppCompatActivity {
         intent.putExtra("nav_data", "senate");
         startActivity(intent);
     }
+
 }
